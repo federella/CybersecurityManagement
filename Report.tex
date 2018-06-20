@@ -5,13 +5,15 @@
 \usepackage{amsmath}
 \usepackage{minted}
 \usepackage{graphicx}
+\usepackage{soul}
+
 
 \usepackage[colorinlistoftodos]{todonotes}
 
 
 \title{%
-	Cybersecurity Management\\
-	\large Assignment Report}
+	Anthem Data Breach Analysis\\
+	\large Cybersecurity Management Course}
 
 
 \author{Federica Consoli $\; \; \; \; \; \; \;$ MAT. 1538420}
@@ -28,6 +30,47 @@
 		The goal of this report is to...
 	\end{abstract}
 
-	\section{Getting started}
+	\section{How did it happen?}
+	
+	\begin{itemize}
+		\item \textbf{Email Security \& Protection:} due to the popularity of emails as attack vectos, best practices and special systems are needed to mitigate such a risk.
+		\item \textbf{Security Awareness Training:} all employees should be educated on corporate policies, procedures and best practices with regards to information security
+		\item \textbf{Privilege Control:} administrative privileges on computers, networks and applications should be assigned and managed properly, according to the principle of least privilege.
+		\item \textbf{Logging \& Auditing:} logging should be enabled on every system and the collected logs should be aggregated and to identify anomalies and abnormal events.
+		\item \textbf{Vulnerability Management:} systems should be regurarly scanned in order to identify, classify, remediate and mitigate vulnerabilities.
+		\item \textbf{Data Loss Prevention:} data exfiltration is prevented by monitoring data while in-use (endpoint), in-motion (network traffic) and at rest (data storage).
+		
+	\end{itemize}
+	\section{Attack Lifecycle}
+	\subsection{Initial compromise}
+	As discussed in the article, the root cause for the data breach that affected Anthem in 2014 is \textit{spear phishing}. According to the reconstruction of the events, the attackers gathered as many information as possible about the tech employees (via Facebook, Linkedin and such) and then used said information to craft a legitimate-looking email with a malicious attachment. \\
+	The employees were tricked into opening the attachment, consequentially providing the attackers with remote access to the machine.\\\\
+	Why did this happen? First of all, the users' behaviour shows a lack of \textit{awareness training}. Users are believed to be the weakest link, so companies should have an awareness training program in place to educate them about corporate policies, procedures and best practices with regards to information security.\\
+	A thorough awareness training would have provided employees with the ability to recognize a non-legitimate email and report it to the appropriate department, without opening the attachment.\\\\
+	It also appears that Anthem did not have any solutions for \textit{email security} on their network. A Secure Email Gateway, for example, could have provided protection against phishing emails by means of signature-based and sandboxing inspections of the attachment and email authentication methods to detect spoofing.\\\\
+	%
+	\subsection{Privilege escalation and lateral movement}
+	The malware contained in the email was probably especially crafted for the attack, so even if the company had an \textit{anti-virus} solution in place it may not have been useful, as the malware's signature would probably not match any entry in the signature database. It is not clear whether \textit{two-factor authentication} was enabled or not: a lack of 2FA would definitely make it easier to perform such an attack, but it does not really make much of a difference in the scenario presented, since the attacker infected a machine residing on the corporate network.\\\\
+	%
+	After the first initial compro
+	
+	\subsection{Data Exfiltration}
+	
+	%two things could have mitigated the damage, perhaps even prevented any loss at all.
+	
+	%Behavioral analysis looks at what the user is doing compared to their historic activity and the activity of others in their same or a similar role. This is actually how the breach was discovered, but it was only the off-chance notice by a human that discovered it. Automated, systematized analysis as part of a Real Time Security Intelligence (RTSI) system would catch this and either raise flags or temporarily close down access.
+	%Context-aware access control could have stopped an outsider, even with phished credentials, by examining where the authentication session was coming from, what platform was in use, what time of day it was, and more.
+	
+
+
+	%Since the attackers gained access to a machine on the company network, it does not really matter whether the company performed regular vulnerability scanning and kept the 
+	\begin{enumerate}
+		\item \st{No email gateway systems}
+		\item No system audit / SIEM
+		\item No priviliges management / access control / NEED TO KNOW
+		\item no exfiltration control
+		\item no routine scanning for vulnerabilities
+		\item no monitor of database activity
+	\end{enumerate}
 	
 \end{document}
