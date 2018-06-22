@@ -1,0 +1,81 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{paws}{manual}{}
+      \name{editor}{1}{}{%
+        {{hash=f595e721a1feb4c66156c8d715b71cf7}{%
+           family={Fundation},
+           familyi={F\bibinitperiod},
+           given={Microsoft},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f595e721a1feb4c66156c8d715b71cf7}
+      \strng{fullhash}{f595e721a1feb4c66156c8d715b71cf7}
+      \strng{bibnamehash}{f595e721a1feb4c66156c8d715b71cf7}
+      \strng{editorbibnamehash}{f595e721a1feb4c66156c8d715b71cf7}
+      \strng{editornamehash}{f595e721a1feb4c66156c8d715b71cf7}
+      \strng{editorfullhash}{f595e721a1feb4c66156c8d715b71cf7}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Privileged Access Workstation}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-gb/windows-server/identity/securing-privileged-access/privileged-access-workstations
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-gb/windows-server/identity/securing-privileged-access/privileged-access-workstations
+      \endverb
+    \endentry
+    \entry{anthemAuditReport}{report}{}
+      \name{author}{1}{}{%
+        {{hash=6f8fe0794cb3bb1487f870a489179b4c}{%
+           family={Personnel\bibnamedelima Management},
+           familyi={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={U.S.\bibnamedelimi Office},
+           giveni={U\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f8fe0794cb3bb1487f870a489179b4c}
+      \strng{fullhash}{6f8fe0794cb3bb1487f870a489179b4c}
+      \strng{bibnamehash}{6f8fe0794cb3bb1487f870a489179b4c}
+      \strng{authorbibnamehash}{6f8fe0794cb3bb1487f870a489179b4c}
+      \strng{authornamehash}{6f8fe0794cb3bb1487f870a489179b4c}
+      \strng{authorfullhash}{6f8fe0794cb3bb1487f870a489179b4c}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Audit of the Information Systems General and Application Controls at Anthe Blue Cross Blue Shield}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.opm.gov/our-inspector-general/reports/2016/audit-of-the-information-systems-general-and-application-controls-at-anthem-blue-cross-blue-shield.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.opm.gov/our-inspector-general/reports/2016/audit-of-the-information-systems-general-and-application-controls-at-anthem-blue-cross-blue-shield.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

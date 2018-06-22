@@ -6,7 +6,8 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{soul}
-
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
 
 \usepackage[colorinlistoftodos]{todonotes}
 
@@ -35,26 +36,26 @@
 	\begin{itemize}
 		\item \textbf{Email Security \& Protection:} due to the popularity of emails as attack vectos, best practices and special systems are needed to mitigate such a risk.
 		\item \textbf{Security Awareness Training:} all employees should be educated on corporate policies, procedures and best practices with regards to information security
-		\item \textbf{Privilege Control:} administrative privileges on computers, networks and applications should be assigned and managed properly, according to the principle of least privilege.
+		\item \textbf{Privileged Access Management:} administrative privileges on computers, networks and applications should be assigned and managed properly, according to the principle of least privilege.
 		\item \textbf{Logging \& Auditing:} logging should be enabled on every system and the collected logs should be aggregated and to identify anomalies and abnormal events.
 		\item \textbf{Vulnerability Management:} systems should be regurarly scanned in order to identify, classify, remediate and mitigate vulnerabilities.
 		\item \textbf{Data Loss Prevention:} data exfiltration is prevented by monitoring data while in-use (endpoint), in-motion (network traffic) and at rest (data storage).
 		
 	\end{itemize}
 	\section{Attack Lifecycle}
-	\subsection{Initial compromise}
 	As discussed in the article, the root cause for the data breach that affected Anthem in 2014 is \textit{spear phishing}. According to the reconstruction of the events, the attackers gathered as many information as possible about the tech employees (via Facebook, Linkedin and such) and then used said information to craft a legitimate-looking email with a malicious attachment. \\
 	The employees were tricked into opening the attachment, consequentially providing the attackers with remote access to the machine.\\\\
 	Why did this happen? First of all, the users' behaviour shows a lack of \textit{awareness training}. Users are believed to be the weakest link, so companies should have an awareness training program in place to educate them about corporate policies, procedures and best practices with regards to information security.\\
 	A thorough awareness training would have provided employees with the ability to recognize a non-legitimate email and report it to the appropriate department, without opening the attachment.\\\\
 	It also appears that Anthem did not have any solutions for \textit{email security} on their network. A Secure Email Gateway, for example, could have provided protection against phishing emails by means of signature-based and sandboxing inspections of the attachment and email authentication methods to detect spoofing.\\\\
 	%
-	\subsection{Privilege escalation and lateral movement}
-	The malware contained in the email was probably especially crafted for the attack, so even if the company had an \textit{anti-virus} solution in place it may not have been useful, as the malware's signature would probably not match any entry in the signature database. It is not clear whether \textit{two-factor authentication} was enabled or not: a lack of 2FA would definitely make it easier to perform such an attack, but it does not really make much of a difference in the scenario presented, since the attacker infected a machine residing on the corporate network.\\\\
+	The malware contained in the email was probably especially crafted for the attack, so even if the company had an \textit{anti-virus} solution in place it may not have been useful, as the malware's signature would probably not match any entry in the signature database. It is not clear whether \textit{two-factor authentication (2FA)} was enabled or not: a lack of 2FA would definitely make it easier to perform such an attack, but it does not really make much of a difference in the scenario presented, since the attacker infected a machine residing on the corporate network.\\\\
 	%
-	After the first initial compro
+	After the first initial compromise, the attacker was able to perform privilege escalation. This suggests that the company did not have any form of \textit{privileged access management} in place, that would have prevented applications to run with administrative privileges. Another solution could have been using a \textit{privileged access workstation}, which provides a dedicated and secured operating system to performe sensitive and privileged operations \cite{paws}.\\\\
+	%
+	The attackers were then able to move laterally and compromising more accounts. This was probably made possible by exploting vulnerabilities affecting systems on the network. As some audits \cite{anthemAuditReport} showed, Anthem had numerous servers either unpatched or running unsupported operating systems: this shows a lack of a proper vulnerability assessment/mitigation process. Systems should be scanned reguarly and kept up-to-date withe with security patches; moreover, end-of-life hardware and software should be replaced.
 	
-	\subsection{Data Exfiltration}
+	
 	
 	%two things could have mitigated the damage, perhaps even prevented any loss at all.
 	
@@ -67,10 +68,10 @@
 	\begin{enumerate}
 		\item \st{No email gateway systems}
 		\item No system audit / SIEM
-		\item No priviliges management / access control / NEED TO KNOW
+		\item \st{priviliges management / access control / NEED TO KNOW}
 		\item no exfiltration control
-		\item no routine scanning for vulnerabilities
+		\item \st{no routine scanning for vulnerabilities}
 		\item no monitor of database activity
 	\end{enumerate}
-	
+	\printbibliography
 \end{document}
