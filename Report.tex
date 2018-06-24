@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[12pt]{extarticle}
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -6,7 +6,7 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{soul}
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, natbib=true, sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 
 \usepackage[colorinlistoftodos]{todonotes}
@@ -17,7 +17,7 @@
 	\large Cybersecurity Management Course}
 
 
-\author{Federica Consoli $\; \; \; \; \; \; \;$ MAT. 1538420}
+\author{Federica Consoli\\Matricola 1538420}
 
 \date{\today}
 
@@ -27,51 +27,48 @@
 
 	\maketitle
 	\newpage
-	\begin{abstract}
-		The goal of this report is to...
-	\end{abstract}
-
-	\section{How did it happen?}
-	
-	\begin{itemize}
-		\item \textbf{Email Security \& Protection:} due to the popularity of emails as attack vectos, best practices and special systems are needed to mitigate such a risk.
-		\item \textbf{Security Awareness Training:} all employees should be educated on corporate policies, procedures and best practices with regards to information security
-		\item \textbf{Privileged Access Management:} administrative privileges on computers, networks and applications should be assigned and managed properly, according to the principle of least privilege.
-		\item \textbf{Logging \& Auditing:} logging should be enabled on every system and the collected logs should be aggregated and to identify anomalies and abnormal events.
-		\item \textbf{Vulnerability Management:} systems should be regurarly scanned in order to identify, classify, remediate and mitigate vulnerabilities.
-		\item \textbf{Data Loss Prevention:} data exfiltration is prevented by monitoring data while in-use (endpoint), in-motion (network traffic) and at rest (data storage).
-		
-	\end{itemize}
-	\section{Attack Lifecycle}
-	As discussed in the article, the root cause for the data breach that affected Anthem in 2014 is \textit{spear phishing}. According to the reconstruction of the events, the attackers gathered as many information as possible about the tech employees (via Facebook, Linkedin and such) and then used said information to craft a legitimate-looking email with a malicious attachment. \\
+	\section{Introduction}
+	The goal of this report is to discuss the data breach that affected Anthem (the second largest health insurer in the United States) in 2014. In the first section, I will offer an insight on which security controls were either missing or implemented inadequately.\\ Then, in the second section, I will reconstruct the attack lifecycle and discuss, at each stage, what allowed it to happen and how the aforementioned security controls could have prevented it. 
+	\section{Security Controls}
+	Upon reading Steve Ragan's article \cite{breacharticle} describing the nature of the breach that affected Anthem, it appears that the company's security measures were both insufficient and inadequate. This means that it was not only a matter of \textit{which} controls were missing: the ones that were actually in place may have not been configured or even used properly.\\\\
+	From what I gathered, the following security measures were either missing or not properly implemented at the time of the attack. 
+	\subsection{Email Security}
+	The article states that the attack was initiated using a phishing email with a malicious attachment. Due to the popularity of emails as attack vectors, company should take appropriate measures to mitigate such risks, by means of specialized systems as Secure Email Gateway, sophisticated spam filters and so on.
+	\subsection{Security Awareness Training}
+	It is unclear whether Anthem had a Security Awareness program in place for their employees. However, even if there was, it was clearly inadequate. All employees, especially those with access to critical systems, should be educated on corporate policies, procedures and best practices with regards to information security.
+	\subsection{Privileged Access Management}
+	Administrative privileges on computers, networks and applications should be assigned and managed properly, according to the principle of least privilege. Moreover, the company should have full visibility and control over all privileged accounts across their assets. This serves two purposes, mitigating the risks posed by insider threats and preventing data breaches.
+	\subsection{Logging \& Auditing}
+	Logging should be enabled on every system for security purposes. Logs should be collected, aggregated and analyzed in order to identify anomalies and abnormal events.
+	\subsection{Vulnerability Management}
+	Companies should have a thorough vulnerability assessment/management progeam in place. Systems should be scanned regurarly in order to identify, classify and mitigate vulnerabilities.
+	\subsection{Data Loss Prevention}
+	In order to prevent exfiltration, data should be monitored at all stages: in-use, in-motion and at rest. DLP solutions are focused on preventing unauthorized access, abnormal use and unauthorized copies/leakage.
+	\newpage
+	\section{The Attack}
+	As discussed in the article, the root cause for the data breach is \textit{spear phishing}. According to the reconstruction of the events, the attackers gathered as many information as possible about a couple of tech employees (via Facebook, Linkedin and such) and then used said information to craft a legitimate-looking email with a malicious attachment. \\
 	The employees were tricked into opening the attachment, consequentially providing the attackers with remote access to the machine.\\\\
-	Why did this happen? First of all, the users' behaviour shows a lack of \textit{awareness training}. Users are believed to be the weakest link, so companies should have an awareness training program in place to educate them about corporate policies, procedures and best practices with regards to information security.\\
+	Why did this happen? First of all, the users' behaviour shows a lack of \textit{awareness training}. As mentioned before, companies should have an awareness training program in place to educate them about corporate policies, procedures and best practices with regards to information security.\\
 	A thorough awareness training would have provided employees with the ability to recognize a non-legitimate email and report it to the appropriate department, without opening the attachment.\\\\
 	It also appears that Anthem did not have any solutions for \textit{email security} on their network. A Secure Email Gateway, for example, could have provided protection against phishing emails by means of signature-based and sandboxing inspections of the attachment and email authentication methods to detect spoofing.\\\\
 	%
 	The malware contained in the email was probably especially crafted for the attack, so even if the company had an \textit{anti-virus} solution in place it may not have been useful, as the malware's signature would probably not match any entry in the signature database. It is not clear whether \textit{two-factor authentication (2FA)} was enabled or not: a lack of 2FA would definitely make it easier to perform such an attack, but it does not really make much of a difference in the scenario presented, since the attacker infected a machine residing on the corporate network.\\\\
 	%
-	After the first initial compromise, the attacker was able to perform privilege escalation. This suggests that the company did not have any form of \textit{privileged access management} in place, that would have prevented applications to run with administrative privileges. Another solution could have been using a \textit{privileged access workstation}, which provides a dedicated and secured operating system to performe sensitive and privileged operations \cite{paws}.\\\\
+	After the first initial compromise, the attacker was able to perform privilege escalation. This suggests that the company did not have any form of \textit{privileged access management} in place, that would have prevented applications to run with administrative privileges. Another solution could have been using a \textit{privileged access workstation}, which provides a dedicated and secured operating system to performe sensitive and privileged operations\cite{paws}.\\\\ %
 	%
-	The attackers were then able to move laterally and compromising more accounts. This was probably made possible by exploting vulnerabilities affecting systems on the network. As some audits \cite{anthemAuditReport} showed, Anthem had numerous servers either unpatched or running unsupported operating systems: this shows a lack of a proper vulnerability assessment/mitigation process. Systems should be scanned reguarly and kept up-to-date withe with security patches; moreover, end-of-life hardware and software should be replaced.
+	The attackers were then able to move laterally and compromising more accounts. This was probably made possible by exploting vulnerabilities affecting systems on the network. As some audits\cite{anthemAuditReport} showed, Anthem had numerous servers either unpatched or running unsupported operating systems: this shows a lack of a proper \textit{vulnerability assessment/mitigation process}. Systems should be scanned reguarly and kept up-to-date with security patches; moreover, end-of-life hardware and software should be replaced.\\\\ % 
+	%
+	It is also interesting to point out that the intrusion was only detected because an employee noticed a query on the database they did not initiate. This shows a lack of several security controls. First of all, the company probably did not collect logs to be used in a \textit{Security Information and Event Management (SIEM)}. SIEMs provide visibility on the whole company by storing, analyzing and correlating different types of security events (authentication events, anti-virus events, intrusion events...). Moreover, SIEMs can be tuned by specifying rules and "normal" behaviour. Any suspicious activity would be promptly picked up, generating an alert requiring immediate action. \\\\
+	%
+	\textit{User Behaviour Analytics (UBA)} software focuses on a range of specific user activities \cite{uba} in order to identify abnormal user behaviour that may indicate that the account was compromised. UBA software usually compares current user activity to their historic activity and the activity of other users in similar roles; moreover, it might check things like the location of the session and the time of the day, even if the credential was authenticated through valid (phished) credentials. This kind of software helps mitigate the risks of both insider and ousider threats.\\\\
+	%
+	After successfully accessing the database, the attackers reportedly were able to expose over 80 million customer records, completely unnoticed. The attackers were able to do so because Anthem was lacking \textit{Data Loss Prevention (DLP)} controls. This includes traffic monitoring and analysis at egress point near the perementer, to detect sensitive or confidential data that is being sent in violation of security policies.
+	\newpage
+	\section{Ethical Implications}
 	
 	
 	
-	%two things could have mitigated the damage, perhaps even prevented any loss at all.
-	
-	%Behavioral analysis looks at what the user is doing compared to their historic activity and the activity of others in their same or a similar role. This is actually how the breach was discovered, but it was only the off-chance notice by a human that discovered it. Automated, systematized analysis as part of a Real Time Security Intelligence (RTSI) system would catch this and either raise flags or temporarily close down access.
-	%Context-aware access control could have stopped an outsider, even with phished credentials, by examining where the authentication session was coming from, what platform was in use, what time of day it was, and more.
-	
-
-
-	%Since the attackers gained access to a machine on the company network, it does not really matter whether the company performed regular vulnerability scanning and kept the 
-	\begin{enumerate}
-		\item \st{No email gateway systems}
-		\item No system audit / SIEM
-		\item \st{priviliges management / access control / NEED TO KNOW}
-		\item no exfiltration control
-		\item \st{no routine scanning for vulnerabilities}
-		\item no monitor of database activity
-	\end{enumerate}
+	 
+	\newpage
 	\printbibliography
 \end{document}
