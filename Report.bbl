@@ -56,6 +56,43 @@
       \verb https://www.csoonline.com/article/2881532/business-continuity/anthem-how-does-a-breach-like-this-happen.html
       \endverb
     \endentry
+    \entry{cyberethics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8ea662df25b46cada5ab3e7107f194aa}{%
+           family={Richard\bibnamedelimb A.\bibnamedelimi Spinello},
+           familyi={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Herman\bibnamedelimb T.\bibnamedelimi Tavani},
+           giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=59830e37ce261d31ad0da0d5d270d0e1}{%
+           family={Jones},
+           familyi={J\bibinitperiod}}}%
+        {{hash=0df8d57026d2d5e9a9b4a8c09f4bf6ca}{%
+           family={Publisher},
+           familyi={P\bibinitperiod},
+           given={Bartlett},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ea662df25b46cada5ab3e7107f194aa}
+      \strng{fullhash}{8ea662df25b46cada5ab3e7107f194aa}
+      \strng{bibnamehash}{8ea662df25b46cada5ab3e7107f194aa}
+      \strng{authorbibnamehash}{8ea662df25b46cada5ab3e7107f194aa}
+      \strng{authornamehash}{8ea662df25b46cada5ab3e7107f194aa}
+      \strng{authorfullhash}{8ea662df25b46cada5ab3e7107f194aa}
+      \strng{editorbibnamehash}{a596a6ab6f6dd38f89930aab7c64c3f7}
+      \strng{editornamehash}{a596a6ab6f6dd38f89930aab7c64c3f7}
+      \strng{editorfullhash}{a596a6ab6f6dd38f89930aab7c64c3f7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Readings in CyberEthics}
+      \field{year}{2004}
+      \field{pages}{18}
+      \range{pages}{1}
+    \endentry
     \entry{paws}{manual}{}
       \name{editor}{1}{}{%
         {{hash=f595e721a1feb4c66156c8d715b71cf7}{%
@@ -70,8 +107,8 @@
       \strng{editorbibnamehash}{f595e721a1feb4c66156c8d715b71cf7}
       \strng{editornamehash}{f595e721a1feb4c66156c8d715b71cf7}
       \strng{editorfullhash}{f595e721a1feb4c66156c8d715b71cf7}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{title}{Privileged Access Workstation}
@@ -99,8 +136,8 @@
       \strng{authorbibnamehash}{6f8fe0794cb3bb1487f870a489179b4c}
       \strng{authornamehash}{6f8fe0794cb3bb1487f870a489179b4c}
       \strng{authorfullhash}{6f8fe0794cb3bb1487f870a489179b4c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Audit of the Information Systems General and Application Controls at Anthe Blue Cross Blue Shield}
@@ -126,8 +163,8 @@
       \strng{authorbibnamehash}{56ecf1f5b5d1b1499b8eb6891221b603}
       \strng{authornamehash}{56ecf1f5b5d1b1499b8eb6891221b603}
       \strng{authorfullhash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Difference Between SIEM and UBA}

@@ -1,0 +1,30 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Security Controls}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Email Security}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Security Awareness Training}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Privileged Access Management}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Logging \& Auditing}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Vulnerability Management}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6}Data Loss Prevention}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Ethical Implications}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Email Security}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}The Attack}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Standards}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusions}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}References}{10}

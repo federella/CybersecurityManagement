@@ -6,6 +6,7 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{soul}
+%\usepackage[nottoc,numbib]{tocbibind}
 \usepackage[backend=biber, natbib=true, sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 
@@ -27,12 +28,14 @@
 
 	\maketitle
 	\newpage
+	\tableofcontents
+	\newpage
 	\section{Introduction}
 	The goal of this report is to discuss the data breach that affected Anthem (the second largest health insurer in the United States) in 2014. In the first section, I will offer an insight on which security controls were either missing or implemented inadequately.\\ Then, in the second section, I will reconstruct the attack lifecycle and discuss, at each stage, what allowed it to happen and how the aforementioned security controls could have prevented it. 
 	\section{Security Controls}
 	Upon reading Steve Ragan's article \cite{breacharticle} describing the nature of the breach that affected Anthem, it appears that the company's security measures were both insufficient and inadequate. This means that it was not only a matter of \textit{which} controls were missing: the ones that were actually in place may have not been configured or even used properly.\\\\
 	From what I gathered, the following security measures were either missing or not properly implemented at the time of the attack. 
-	\subsection{Email Security}
+	\subsection{Email and Web Security}
 	The article states that the attack was initiated using a phishing email with a malicious attachment. Due to the popularity of emails as attack vectors, company should take appropriate measures to mitigate such risks, by means of specialized systems as Secure Email Gateway, sophisticated spam filters and so on.
 	\subsection{Security Awareness Training}
 	It is unclear whether Anthem had a Security Awareness program in place for their employees. However, even if there was, it was clearly inadequate. All employees, especially those with access to critical systems, should be educated on corporate policies, procedures and best practices with regards to information security.
@@ -44,6 +47,41 @@
 	Companies should have a thorough vulnerability assessment/management progeam in place. Systems should be scanned regurarly in order to identify, classify and mitigate vulnerabilities.
 	\subsection{Data Loss Prevention}
 	In order to prevent exfiltration, data should be monitored at all stages: in-use, in-motion and at rest. DLP solutions are focused on preventing unauthorized access, abnormal use and unauthorized copies/leakage.
+	\newpage
+	\section{Ethical Implications}
+	The evolution of computer and technology surely made life easier under several aspects both for individuals and businesses, but it does not come without a price. This is why a new branch of applied ethics was created, called \textit{computer ethics}: the term was conied by Walter Maner in the mid-70s, and it refers to the study of all those ethical problems ``aggravated, transformed or created by computer 
+	technology"\cite{cyberethics}.\\\\
+	%
+	Companies that try to enforce some of the security controls mentioned in the previous section cannot do so without taking into consideration the ethical issues that come with them, which are illustrated in the following sections.
+	%
+	\subsection{Email Security}
+	First and foremost, certain controls might affect the \textit{privacy} of the employees. As discussed before, it might be important to monitor the exchange of emails in order to identify potentially malicious messages. There are several considerations to be made:
+	\begin{itemize}
+		\item[--] Is it ethical for a company to access employees email, even if it is to avoid loss/theft of sensitive corporate data?
+		\item[--] Should the company be able to read the content of the email? Or should they have access only to headers and attachments?
+		\item[--] Should employees be allowed to access their personal email account while at work? If so, should the company monitor both personal and professional emails?
+		\item[--] Should this policy be disclosed to employees? 
+	\end{itemize}
+	
+
+	
+	
+	
+	
+	
+	\begin{itemize}
+		\item privacy \& monitoring
+		\item whistle-blower policy?
+		\
+	\end{itemize}
+	
+	
+	\textit{Discuss which information security ethical principles would apply to the control weaknesses identified in the previous step 2 [GUIDANCE: Please reference the set of slides N.3 on “Ethics”]; the purpose of question in point 3 is for you to analyze and comment on the ethical implications of the controls recommended by the relevant information security standards and frameworks studied during our classes (and/or any other relevant source of best practices that you may want to reference).
+	For example, the activities of staff when using the ICT assets of an organization may be monitored. What are the ethical considerations (and/or mitigating measures) of such an approach?	}
+	
+
+	
+	On a more general level, ethics must also be considered when utilizing security solutions that have administrative access to employees’ personal devices when they’re being used in conjunction with a bring-your-own-device policy, such as mobile device management and network access control systems. Those hoping to join the cybersecurity profession will need to comprehend all aspects of ethics’ relationship with IT and make these practices a natural part of their working behavior.
 	\newpage
 	\section{The Attack}
 	As discussed in the article, the root cause for the data breach is \textit{spear phishing}. According to the reconstruction of the events, the attackers gathered as many information as possible about a couple of tech employees (via Facebook, Linkedin and such) and then used said information to craft a legitimate-looking email with a malicious attachment. \\
@@ -64,11 +102,13 @@
 	%
 	After successfully accessing the database, the attackers reportedly were able to expose over 80 million customer records, completely unnoticed. The attackers were able to do so because Anthem was lacking \textit{Data Loss Prevention (DLP)} controls. This includes traffic monitoring and analysis at egress point near the perementer, to detect sensitive or confidential data that is being sent in violation of security policies.
 	\newpage
-	\section{Ethical Implications}
-	
-	
-	
+
+	\section{Standards} 
+	 \textit{Referencing the ISO27001/2 standard or any other information security standard/best practices/frameworks of your choice (i.e., TOP 20 Critical Controls; NIST Series 800; etc.), describe at least five (5) controls that would have mitigated the weaknesses identified, how and why}
+	 \section{Conclusions}
+	 \textit{Conclude your analysis with summary observations about any potential limitations presented by the referenced information security standard/best practices/frameworks}
 	 
 	\newpage
-	\printbibliography
+	\section{References}
+	\printbibliography[heading=none]
 \end{document}
