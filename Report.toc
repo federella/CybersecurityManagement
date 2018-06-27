@@ -3,28 +3,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Introduction}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Security Controls}{3}
+\contentsline {section}{\numberline {2}Security Controls}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Email Security}{3}
+\contentsline {subsection}{\numberline {2.1}Email and Web Security}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Security Awareness Training}{3}
+\contentsline {subsection}{\numberline {2.2}Security Awareness Training}{4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Privileged Access Management}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Logging \& Auditing}{4}
+\contentsline {subsection}{\numberline {2.4}Logging \& Auditing}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Vulnerability Management}{4}
+\contentsline {subsection}{\numberline {2.5}Vulnerability Management}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}Data Loss Prevention}{4}
+\contentsline {subsection}{\numberline {2.6}Data Loss Prevention}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Ethical Implications}{5}
+\contentsline {section}{\numberline {3}Ethical Implications}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Email Security}{5}
+\contentsline {subsection}{\numberline {3.1}Email and Web Security}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}The Attack}{7}
+\contentsline {subsection}{\numberline {3.2}Security Awareness}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Standards}{9}
+\contentsline {section}{\numberline {4}The Attack}{8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusions}{9}
+\contentsline {section}{\numberline {5}Standards}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}References}{10}
+\contentsline {section}{\numberline {6}Conclusions}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}References}{12}

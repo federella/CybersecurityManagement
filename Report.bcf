@@ -1928,6 +1928,7 @@
     <bcf:citekey order="3">paws</bcf:citekey>
     <bcf:citekey order="4">anthemAuditReport</bcf:citekey>
     <bcf:citekey order="5">uba</bcf:citekey>
+    <bcf:citekey order="6">cis</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -175,6 +175,34 @@
       \verb https://blog.varonis.com/the-difference-between-siem-and-uba/
       \endverb
     \endentry
+    \entry{cis}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0d1e7d03f42c54dd84af54a5183b6077}{%
+           family={Internet\bibnamedelima Security},
+           familyi={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Center},
+           giveni={C\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d1e7d03f42c54dd84af54a5183b6077}
+      \strng{fullhash}{0d1e7d03f42c54dd84af54a5183b6077}
+      \strng{bibnamehash}{0d1e7d03f42c54dd84af54a5183b6077}
+      \strng{authorbibnamehash}{0d1e7d03f42c54dd84af54a5183b6077}
+      \strng{authornamehash}{0d1e7d03f42c54dd84af54a5183b6077}
+      \strng{authorfullhash}{0d1e7d03f42c54dd84af54a5183b6077}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CIS Controls Version 7}
+      \verb{urlraw}
+      \verb https://learn.cisecurity.org/20-controls-download
+      \endverb
+      \verb{url}
+      \verb https://learn.cisecurity.org/20-controls-download
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
