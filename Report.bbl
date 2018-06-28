@@ -93,33 +93,6 @@
       \field{pages}{18}
       \range{pages}{1}
     \endentry
-    \entry{paws}{manual}{}
-      \name{editor}{1}{}{%
-        {{hash=f595e721a1feb4c66156c8d715b71cf7}{%
-           family={Fundation},
-           familyi={F\bibinitperiod},
-           given={Microsoft},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{f595e721a1feb4c66156c8d715b71cf7}
-      \strng{fullhash}{f595e721a1feb4c66156c8d715b71cf7}
-      \strng{bibnamehash}{f595e721a1feb4c66156c8d715b71cf7}
-      \strng{editorbibnamehash}{f595e721a1feb4c66156c8d715b71cf7}
-      \strng{editornamehash}{f595e721a1feb4c66156c8d715b71cf7}
-      \strng{editorfullhash}{f595e721a1feb4c66156c8d715b71cf7}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{title}{Privileged Access Workstation}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://docs.microsoft.com/en-gb/windows-server/identity/securing-privileged-access/privileged-access-workstations
-      \endverb
-      \verb{url}
-      \verb https://docs.microsoft.com/en-gb/windows-server/identity/securing-privileged-access/privileged-access-workstations
-      \endverb
-    \endentry
     \entry{anthemAuditReport}{report}{}
       \name{author}{1}{}{%
         {{hash=6f8fe0794cb3bb1487f870a489179b4c}{%
@@ -136,8 +109,8 @@
       \strng{authorbibnamehash}{6f8fe0794cb3bb1487f870a489179b4c}
       \strng{authornamehash}{6f8fe0794cb3bb1487f870a489179b4c}
       \strng{authorfullhash}{6f8fe0794cb3bb1487f870a489179b4c}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Audit of the Information Systems General and Application Controls at Anthe Blue Cross Blue Shield}
@@ -147,32 +120,6 @@
       \endverb
       \verb{url}
       \verb https://www.opm.gov/our-inspector-general/reports/2016/audit-of-the-information-systems-general-and-application-controls-at-anthem-blue-cross-blue-shield.pdf
-      \endverb
-    \endentry
-    \entry{uba}{online}{}
-      \name{author}{1}{}{%
-        {{hash=56ecf1f5b5d1b1499b8eb6891221b603}{%
-           family={Ng},
-           familyi={N\bibinitperiod},
-           given={Cindy},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \strng{fullhash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \strng{bibnamehash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \strng{authorbibnamehash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \strng{authornamehash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \strng{authorfullhash}{56ecf1f5b5d1b1499b8eb6891221b603}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Difference Between SIEM and UBA}
-      \verb{urlraw}
-      \verb https://blog.varonis.com/the-difference-between-siem-and-uba/
-      \endverb
-      \verb{url}
-      \verb https://blog.varonis.com/the-difference-between-siem-and-uba/
       \endverb
     \endentry
     \entry{cis}{online}{}
@@ -191,8 +138,8 @@
       \strng{authorbibnamehash}{0d1e7d03f42c54dd84af54a5183b6077}
       \strng{authornamehash}{0d1e7d03f42c54dd84af54a5183b6077}
       \strng{authorfullhash}{0d1e7d03f42c54dd84af54a5183b6077}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{CIS Controls Version 7}

@@ -1,10 +1,25 @@
 \section{Standards} 
 	The Center for Internet Security (CIS) provides a set of 20 security controls and best practices aimed at mitigating the most common attacks against systems and networks, helping companies to improve their overall security state \cite{cis}. FILL\\
-	\subsection{CSC 3: Secure Software Configuration}
-	\subsection{CSC 4: Continuous Vulnerability Assessment}
-	\subsection{CSC 5: Controlled Use of Administrative Privileges}
+
+	\subsection{CSC 3: Continuous Vulnerability Assessment}
+	\textit{``Continuously acquire, assess and take action on new information in order to identify vulnerabilities and to remediate and minimize the window of opportunity for attackers."}\\\\
+	By using automated vulnerability scanning tools (controls 3.1 and 3.2), Anthem could have promptly discovered misconfigurations and/or vulnerabilities and addressed them in a proactive manner, drastically reducing the attack surface.\\\\
+	Moreover, the deployment of an automated software update solution (controls 3.4 and 3.5) would have kept operating systems and applications up-to-date with security patches, making it difficult for the attackers to move laterally in the organization by exploiting vulnerable systems.
+	\subsection{CSC 4: Controlled Use of Administrative Privileges}
+	\textit{``Track, control, prevent and correct the use, assignment and configuration of administrative privileges on computers, networks and applications."}\\\\
+	This control could have helped Anthem to prevent attackers from performing privilege escalation. For example, controls 4.3 and 4.6 suggest using a dedicated account and/or workstation: these would be used only to perform administrative tasks, with no Internet access and no possibility of using emails, web browsers and so on.
+	
+	%\subsection{CSC 5: Secure Software Configuration}
+	%\textit{``"}
 	\subsection{CSC 6: Maintenance, Monitoring and Analysis of Audit Logs}
+	\textit{``Collect, manage and analyze audit logs of events that could help detect, understand or recover from an attack."}\\\\
+	The absence of clear and detailed logs allows attackers to hide their presence and activity on the victim's systems: in Anthem's case, the breach was only discovered because an employee noticed a suspicious query on the database.\\\\ Control 6.6 suggests the deployment of a SIEM to allow log correlation and analysis, while control 6.8 says that the SIEM should be tuned regurarly to allow better identification of events and decrease unnecessary noise. Moreover, control 6.7 states that logs should be reviewed regurarly to identify anomalies and/or abnormal events in the system: Anthem failed to do this, and it is the reason why the company was not able to detect the compromise rightaway.
+	
 	\subsection{CSC 7: Email and Web Browser Protections}
+	\textit{``Minimize the attack surface and the opportunities for attackers to manipulate human behavior through their interaction with web browsers and e-mail systems."}
 	\subsection{CSC 13: Data Protection}
+	\textit{``Prevent data exfiltration, mitigate the effects of exfiltrated data and ensure the privacy and integrity of sensitive information."}
+	\subsection{CSC 17: Security Awareness and Training Program}
+	\textit{``Identify the specific knowledge, skills and abilities needed to support defense of the enterprise; develop and execute an integrated plan to assess, identify and remediate gaps, through policy, organizational planning, training and awareness programs for all functional roles in the organization."}
 
 
