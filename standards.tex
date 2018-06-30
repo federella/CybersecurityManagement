@@ -1,6 +1,6 @@
 \section{Standards} 
-	The Center for Internet Security (CIS) provides a set of 20 security controls and best practices aimed at mitigating the most common attacks against systems and networks, helping companies to improve their overall security state \cite{cis}. FILL\\
-
+	The Center for Internet Security (CIS) provides a set of twenty security controls and best practices aimed at mitigating the most common attacks against systems and networks, helping companies to improve their overall security state \cite{cis}.\\\\
+	Following are six controls that Anthem should have implemented: for each of them, there is a short explanation of what they are and how they would have helped to prevent the breach.
 	\subsection{CSC 3: Continuous Vulnerability Assessment}
 	\textit{``Continuously acquire, assess and take action on new information in order to identify vulnerabilities and to remediate and minimize the window of opportunity for attackers."}\\\\
 	By using automated vulnerability scanning tools (controls 3.1 and 3.2), Anthem could have promptly discovered misconfigurations and/or vulnerabilities and addressed them in a proactive manner, drastically reducing the attack surface.\\\\
@@ -8,18 +8,24 @@
 	\subsection{CSC 4: Controlled Use of Administrative Privileges}
 	\textit{``Track, control, prevent and correct the use, assignment and configuration of administrative privileges on computers, networks and applications."}\\\\
 	This control could have helped Anthem to prevent attackers from performing privilege escalation. For example, controls 4.3 and 4.6 suggest using a dedicated account and/or workstation: these would be used only to perform administrative tasks, with no Internet access and no possibility of using emails, web browsers and so on.
-	
 	%\subsection{CSC 5: Secure Software Configuration}
 	%\textit{``"}
 	\subsection{CSC 6: Maintenance, Monitoring and Analysis of Audit Logs}
 	\textit{``Collect, manage and analyze audit logs of events that could help detect, understand or recover from an attack."}\\\\
-	The absence of clear and detailed logs allows attackers to hide their presence and activity on the victim's systems: in Anthem's case, the breach was only discovered because an employee noticed a suspicious query on the database.\\\\ Control 6.6 suggests the deployment of a SIEM to allow log correlation and analysis, while control 6.8 says that the SIEM should be tuned regurarly to allow better identification of events and decrease unnecessary noise. Moreover, control 6.7 states that logs should be reviewed regurarly to identify anomalies and/or abnormal events in the system: Anthem failed to do this, and it is the reason why the company was not able to detect the compromise rightaway.
+	The absence of clear and detailed logs allows attackers to hide their presence and activity on the victim's systems: in Anthem's case, the breach was only discovered ``by accident" because an employee noticed a suspicious query on the database.\\\\ Control 6.6 suggests the deployment of a SIEM to allow log correlation and analysis, while control 6.8 says that the SIEM should be tuned regurarly to allow better identification of events and decrease unnecessary noise. Moreover, control 6.7 states that logs should be reviewed regurarly to identify anomalies and/or abnormal events in the system: Anthem failed to do this, and it is the reason why the company was not able to detect the compromise rightaway.
 	
 	\subsection{CSC 7: Email and Web Browser Protections}
-	\textit{``Minimize the attack surface and the opportunities for attackers to manipulate human behavior through their interaction with web browsers and e-mail systems."}
+	\textit{``Minimize the attack surface and the opportunities for attackers to manipulate human behavior through their interaction with web browsers and e-mail systems."}\\\\
+	Web browser and email clients are very common points of attack, since they represent the main means of interaction between users and untrusted environments. With reference to Anthem's case, controls 7.9 and 7.10 definitely could have helped to mitigate the risk of spear phishing emails. The former suggests blocking all email attachments reaching the corporate's gateway if the file type is not necessary for the business, while the latter advocates for the use of sandbox analysis of inbound emails to identify and block attachments which appears to be malicious.\\\\
+	Moreover, control 7.8 suggests enabling receiver-side verification and spam-filtering tools to improve security against spoofed and phishing emails: as an example, this can be done by implementing Domain-based Message Authentication, Reporting and Conformance (DMARC) and Sender Policy Framework (SPF).\\\\
+	The implementation of said controls would have helped the company to prevent the attackers from launching the attack, since the malicious attachment would have never reached the employee's mailbox in the first place.
 	\subsection{CSC 13: Data Protection}
-	\textit{``Prevent data exfiltration, mitigate the effects of exfiltrated data and ensure the privacy and integrity of sensitive information."}
+	\textit{``Prevent data exfiltration, mitigate the effects of exfiltrated data, and ensure the privacy and integrity of sensitive information."}\\\\
+	The main goal of this control is the creation of an inventory containing all sensitive data/assets (control 13.1), in order to separate them from less sensitive information. Moreover, it is suggested to segment the network so that systems of the same sensitivity level are on the same segment but also separated from systems with a different level. \\\\This allows fine-grained access control on a need-to-know basis, meaning that employees are allowed to access only the information they need to perform their jobs. Such approach could have helped in Anthem case, because it would have prevented a single employee from having access to an entire database containing customer records.\\\\
+	Moreover, control 13.3 states the importance of monitoring and blocking unauthorized network traffic by deploying automated tools on the company perimeters: this would have allowed Anthem to detect the unauthorized transfer of their sensitive records and to promptly block the exfiltration of data.
+	\newpage
 	\subsection{CSC 17: Security Awareness and Training Program}
-	\textit{``Identify the specific knowledge, skills and abilities needed to support defense of the enterprise; develop and execute an integrated plan to assess, identify and remediate gaps, through policy, organizational planning, training and awareness programs for all functional roles in the organization."}
-
-
+	\textit{``Identify the specific knowledge, skills and abilities needed to support defense of the enterprise; develop and execute an integrated plan to assess, identify and remediate gaps, through policy, organizational planning, training and awareness programs for all functional roles in the organization."}\\\\
+	This control aims at providing all functional roles within an organization with ``good cyber defense habits" that could increase readiness and responsiveness to attacks. As stated in the CIS document, companies should take a holistic approach that does not only consider policy and technology, but also focuses on training employees. Even in Anthem's case, the training should have been tailored to each employee's role and responsibility, and it should have been repeated and updated regularly, as stated in controls 17.3 and 17.4.\\\\
+	Control 17.6 focuses on the need to train the employees on how to identify social engineering attacks, such as phishing and impersonation calls: this control would have clearly helped Anthem to prevent the attack, since the compromise was made possible by exploiting the human factor and tricking employees into opening a phishing email. Finally, control 17.9 states the importance of training employees on how to identify the most common indicators of an incident in order to report it: this could have helped employees in technical roles to discover the breach earlier and to minimize its impact.
+	\newpage

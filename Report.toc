@@ -7,26 +7,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Email and Web Security}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Security Awareness Training}{4}
+\contentsline {subsection}{\numberline {2.2}Endpoint Security}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Privileged Access Management}{4}
+\contentsline {subsection}{\numberline {2.3}Security Awareness Training}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Logging \& Auditing}{5}
+\contentsline {subsection}{\numberline {2.4}Management of Administrative Privileges}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Vulnerability Management}{5}
+\contentsline {subsection}{\numberline {2.5}Logs Review}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6}Data Loss Prevention}{5}
+\contentsline {subsection}{\numberline {2.6}Vulnerability Management Process}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7}Data Loss Prevention}{5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Ethical Implications}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Email and Web Security}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Security Awareness}{7}
+\contentsline {subsection}{\numberline {3.2}Endpoint Security}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Security Awareness}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}The Attack}{8}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Initial Compromise}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Privilege Escalation \& Lateral Movement}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Data Exfiltration}{9}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Standards}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusions}{11}
+\contentsline {subsection}{\numberline {5.1}CSC 3: Continuous Vulnerability Assessment}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}References}{12}
+\contentsline {subsection}{\numberline {5.2}CSC 4: Controlled Use of Administrative Privileges}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}CSC 6: Maintenance, Monitoring and Analysis of Audit Logs}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}CSC 7: Email and Web Browser Protections}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5}CSC 13: Data Protection}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6}CSC 17: Security Awareness and Training Program}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusions}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}References}{15}
