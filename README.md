@@ -2,8 +2,7 @@
 
 1. Read the information security breach “Anthem:
 How does a break like this happen?” described in the
-following web site: [CSO Online](http://www.csoonline.com/article/2881532/business-continuity/anthem-how-does-a-
-breach-like-this-happen.html?page=2)
+following web site: [CSO Online](http://www.csoonline.com/article/2881532/business-continuity/anthem-how-does-a-breach-like-this-happen.html?page=2)
 
 2. Identify which control weaknesses – in your opinion - may have exposed the Organization to the
 vulnerabilities exploited in the attack described in the case study
